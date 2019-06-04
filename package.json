@@ -1,6 +1,6 @@
 {
-  "name": "hexo-renderer-disable-tag-plugins",
-  "version": "0.1.1",
+  "name": "hexo-stop-tag-plugins",
+  "version": "0.1.2",
   "description": "Disable tag plugins for Hexo",
   "main": "index",
   "scripts": {
@@ -15,14 +15,14 @@
     "lib",
     "index.js"
   ],
-  "repository": "think-in-universe/hexo-renderer-disable-tag-plugins",
+  "repository": "think-in-universe/hexo-stop-tag-plugins",
   "keywords": [
     "hexo",
     "markdown",
     "tag-plugins",
     "renderer"
   ],
-  "author": "Robert Yan <world_linguist@163.com> (https://steemit.com/@robertyan)",
+  "author": "Thinker <world_linguist@163.com> (https://github.com/thinker-in-universe)",
   "maintainers": [],
   "license": "MIT",
   "dependencies": {
@@ -35,6 +35,7 @@
     "babel-eslint": "^10.0.1",
     "eslint-config-hexo": "^3.0.0",
     "istanbul": "^0.4.5",
+    "hexo-renderer-marked": "^0.2.10",
     "mocha": "^6.0.0"
   },
   "engines": {
