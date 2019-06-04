@@ -45,7 +45,7 @@ After installation, make sure the `hexo-stop-tag-plugins` package appear after a
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "hexo-stop-tag-plugins": "^0.1.2",
+    "hexo-stop-tag-plugins": "^0.1.3",
     "uglify-es": "^3.3.9"
   }
 }
