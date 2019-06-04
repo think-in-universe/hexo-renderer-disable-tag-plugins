@@ -2,6 +2,6 @@
 
 'use strict';
 
-var renderer = require('./lib/renderer');
+var overrider = require('./lib/overrider');
 
-renderer(hexo);
+overrider(hexo);
