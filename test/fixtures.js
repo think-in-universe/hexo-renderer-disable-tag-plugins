@@ -50,8 +50,3 @@ exports.expected_without_tag_plugins = [
   'quote content<br>',
   '{% endquote %}</p>'
 ].join('');
-
-
-
-
-

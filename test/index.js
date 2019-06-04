@@ -51,7 +51,7 @@ describe('Stop tag plugins', function() {
   });
 
   it('overide the default markdown renderer', () => {
-      overrider(hexo);
+    overrider(hexo);
   });
 
   it('render post without tag plugins', () => {
@@ -91,8 +91,8 @@ describe('Stop tag plugins', function() {
   });
 
   it('set the stop_tag_plugins to false', () => {
-      hexo.config.stop_tag_plugins = false;
-      overrider(hexo);
+    hexo.config.stop_tag_plugins = false;
+    overrider(hexo);
   });
 
   it('render post after enabling tag plugins', () => {
@@ -132,8 +132,8 @@ describe('Stop tag plugins', function() {
   });
 
   it('set the stop_tag_plugins to true', () => {
-      hexo.config.stop_tag_plugins = true;
-      overrider(hexo);
+    hexo.config.stop_tag_plugins = true;
+    overrider(hexo);
   });
 
 

@@ -1,6 +1,6 @@
 {
   "name": "hexo-stop-tag-plugins",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Disable tag plugins for Hexo",
   "main": "index",
   "scripts": {
@@ -33,6 +33,7 @@
     "eslint-config-hexo": "^3.0.0",
     "istanbul": "^0.4.5",
     "hexo": "^3.8.0",
+    "hexo-util": "^0.6.2",
     "hexo-renderer-marked": "^0.2.10",
     "mocha": "^6.0.0"
   },
