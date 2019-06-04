@@ -6,12 +6,12 @@
 [![NPM Dependencies](https://david-dm.org/think-in-universe/hexo-renderer-disable-tag-plugins.svg)](https://david-dm.org/think-in-universe/hexo-renderer-disable-tag-plugins)
 [![NPM DevDependencies](https://david-dm.org/think-in-universe/hexo-renderer-disable-tag-plugins/dev-status.svg)](https://david-dm.org/think-in-universe/hexo-renderer-disable-tag-plugins?type=dev)
 
-For Markdown rendering, disable the [tag plugins](https://hexo.io/docs/tag-plugins), in case you don't want hexo to process the markdown with [nunjucks syntax](https://mozilla.github.io/nunjucks/templating.html), which is used by default.
+For Markdown rendering, disable the [tag plugins](https://hexo.io/docs/tag-plugins), if you don't want hexo to process the markdown with [nunjucks syntax](https://mozilla.github.io/nunjucks/templating.html), which is used by default.
 
 ## Installation
 
 ``` bash
-$ npm install hexo-renderer-disable-tag-plugins --save
+$ npm install hexo-stop-tag-plugins --save
 ```
 
 - Hexo 3: >= 0.2
@@ -20,7 +20,7 @@ $ npm install hexo-renderer-disable-tag-plugins --save
 
 ## How to use
 
-After installation, make sure to put the package at the end of all the renderers.
+After installation, make sure the `hexo-stop-tag-plugins` package appear after all the renderers plugins. In most case, the order should be already correct.
 
 `package.json`:
 ```json
@@ -36,7 +36,6 @@ After installation, make sure to put the package at the end of all the renderers
     "hexo": "^3.8.0",
     "hexo-all-minifier": "^0.5.3",
     "hexo-deployer-git": "^0.3.1",
-    "hexo-filter-github-emojis": "^2.0.0",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
     "hexo-generator-index": "^0.2.0",
@@ -45,17 +44,17 @@ After installation, make sure to put the package at the end of all the renderers
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-renderer-disable-tag-plugins": "^0.1.1",
     "hexo-server": "^0.2.0",
+    "hexo-stop-tag-plugins": "^0.1.2",
     "uglify-es": "^3.3.9"
   }
 }
 ```
 
-and if you want to stop disabling the tag plugins, you can uninstall this pacakge, or add the below parameter in `_config.yml`:
+and if you want to enabling the tag plugins, you can either uninstall this pacakge, or set the `stop_tag_plugins` configuration to `false` in `_config.yml`:
 
 ```yaml
-disable_tag_plugins: false
+stop_tag_plugins: false
 ```
 
 
