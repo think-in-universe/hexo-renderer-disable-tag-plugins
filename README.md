@@ -17,6 +17,7 @@ $ npm install hexo-renderer-disable-tag-plugins --save
 - Hexo 3: >= 0.2
 - Hexo 2: 0.1.x
 
+
 ## How to use
 
 After installation, make sure to put the package at the end of all the renderers.
@@ -49,7 +50,12 @@ After installation, make sure to put the package at the end of all the renderers
     "uglify-es": "^3.3.9"
   }
 }
+```
 
+and if you want to stop disabling the tag plugins, you can uninstall this pacakge, or add the below parameter in `_config.yml`:
+
+```yaml
+disable_tag_plugins: false
 ```
 
 
