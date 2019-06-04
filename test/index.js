@@ -6,7 +6,7 @@ var util = require('hexo-util');
 describe('Disable tag plugins', function() {
   var ctx = {
     config: {
-      marked: {}
+      disable_tag_plugins: {}
     }
   };
 
