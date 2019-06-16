@@ -14,13 +14,15 @@ For Markdown rendering, disable the [tag plugins](https://hexo.io/docs/tag-plugi
 $ npm install hexo-stop-tag-plugins --save
 ```
 
-- Hexo 3: >= 0.2
-- Hexo 2: 0.1.x
+- Hexo version >= 3.9.0 are recommended, which includes the fix of [disableNunjucks property issue](https://github.com/hexojs/hexo/pull/3573)
+- If you use hexo version < 3.9.0, hexo may not render the markdown code blocks correctly due to the above issue
 
 
 ## How to use
 
-After installation, make sure the `hexo-stop-tag-plugins` package appear after all the renderers plugins. In most case, the order should be already correct.
+1. confirm the package order
+
+After installation, make sure the `hexo-stop-tag-plugins` package appear after all the renderers plugins. In most case, the order should be already correct with alphabetical order.
 
 `package.json`:
 ```json
@@ -51,7 +53,9 @@ After installation, make sure the `hexo-stop-tag-plugins` package appear after a
 }
 ```
 
-and if you want to enabling the tag plugins, you can either uninstall this pacakge, or set the `stop_tag_plugins` configuration to `false` in `_config.yml`:
+2. how to disable this plugin
+
+If you want to enabling the tag plugins, you can either uninstall this pacakge, or set the `stop_tag_plugins` configuration to `false` in `_config.yml`:
 
 ```yaml
 stop_tag_plugins: false
