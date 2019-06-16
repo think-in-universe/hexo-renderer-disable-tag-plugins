@@ -1,6 +1,6 @@
 {
   "name": "hexo-stop-tag-plugins",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Disable tag plugins for Hexo",
   "main": "index",
   "scripts": {
