@@ -20,7 +20,7 @@ $ npm install hexo-stop-tag-plugins --save
 
 ## How to use
 
-1. confirm the package order
+### 1. Confirm the package order
 
 After installation, make sure the `hexo-stop-tag-plugins` package appear after all the renderers plugins. In most case, the order should be already correct with alphabetical order.
 
@@ -53,7 +53,7 @@ After installation, make sure the `hexo-stop-tag-plugins` package appear after a
 }
 ```
 
-2. how to disable this plugin
+### 2. How to disable this plugin
 
 If you want to enabling the tag plugins, you can either uninstall this pacakge, or set the `stop_tag_plugins` configuration to `false` in `_config.yml`:
 
