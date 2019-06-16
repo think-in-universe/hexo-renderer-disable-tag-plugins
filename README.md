@@ -31,11 +31,11 @@ After installation, make sure the `hexo-stop-tag-plugins` package appear after a
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "clean-css": "^4.2.1",
-    "hexo": "^3.8.0",
+    "hexo": "^3.9.0",
     "hexo-all-minifier": "^0.5.3",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
